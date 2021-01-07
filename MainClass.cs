@@ -3,36 +3,36 @@ using System;
 class MainClass {
   public static void Main (string[] args) {
     
-    int num1, num2, res = 0;
+    int firstnumber, secondnumber, equal = 0;
 
-    string op;
+    string opeation;
 
    Console.WriteLine("Digite o primeiro valor: ");
-     num1 = int.Parse(Console.ReadLine());
+      firstnumber = int.Parse(Console.ReadLine());
    
    Console.WriteLine("Digite a operação: ");
-    op = Console.ReadLine();
+      opeation = Console.ReadLine();
    
    Console.WriteLine("Digite o segundo valor: ");
-     num2 = int.Parse(Console.ReadLine());  
+      secondnumber = int.Parse(Console.ReadLine());  
     
 
-    switch (op)
+    switch (opeation)
     {
         case "+" :
-        res = num1 + num2;
+        equal = firstnumber + secondnumber;
         break;
 
         case "-" :
-        res = num1 - num2;
+        equal = firstnumber - secondnumber;
         break;
 
         case "*" :
-        res = num1 * num2;
+        equal = firstnumber * secondnumber;
         break;
 
         case "/" :
-        res = num1 / num2;
+        equal = firstnumber / secondnumber;
         break;
 
         default:
@@ -40,9 +40,7 @@ class MainClass {
         break;
       }
         
-      Console.WriteLine("{0}{1}{2} = {3}", num1, op, num2, res);
-
-
+      Console.WriteLine("{0}{1}{2} = {3}", firstnumber, opeation, secondnumber, equal);
     
     Console.ReadKey (true);
   }
